@@ -1,0 +1,41 @@
+$text: #000000;
+$background: #f7f9f9;
+$cardBackground: #dee0e0;
+$selected: #2fcc9e;
+$alternate: #1c5d99;
+$warning: #e36397;
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $background;
+    color: $text;
+}
+
+.App {
+
+    .navbar {
+        border-bottom: 1px solid $cardBackground;
+        .navbar-brand {
+            font-size: 2rem;
+        }
+        .navbar-nav {
+            margin:0 auto;
+            text-align: center;
+    
+            .nav-link {
+                color: $text;
+                font-size: .8rem;
+                padding: .5rem 1rem;
+            }
+            .nav-link:hover {
+                color: $selected;
+            }
+        }
+    }
+     
+
+}
+
