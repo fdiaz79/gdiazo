@@ -13,7 +13,6 @@ body {
     background-color: $background;
     color: $text;
 }
-
 .App {
 
     .navbar {
@@ -33,6 +32,18 @@ body {
             .nav-link:hover {
                 color: $selected;
             }
+        }
+    }
+    .carousel-comp {
+        .gallery-picture {
+            border: 1px solid $text;
+        }
+    }
+
+    .footer {
+        .green-text {
+            color: $selected;
+            font-weight: bold;
         }
     }
      
