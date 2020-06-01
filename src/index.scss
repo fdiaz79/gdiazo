@@ -1,4 +1,5 @@
 $text: #000000;
+$shadow: #535353;
 $background: #f7f9f9;
 $cardBackground: #dee0e0;
 $selected: #2fcc9e;
@@ -37,6 +38,63 @@ body {
     .carousel-comp {
         .gallery-picture {
             border: 1px solid $text;
+        }
+        .carousel-container {
+            position: relative;
+            .gallery-name {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%);
+                transform: translateX(-50%);
+                background: rgba(222, 224, 224, 0.4);
+                padding: 5px 10px 0 10px;
+                text-align: center;
+                font-size: 2rem;
+                width: 80%;
+                max-width: 100%;
+            }
+            .back-button {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                background-color: transparent;
+                border: none;
+                font-size: 2rem;
+                text-shadow: 2px 2px 8px $shadow;
+            }
+            .next-button {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background-color: transparent;
+                border: none;
+                font-size: 2rem;
+                text-shadow: 2px 2px 8px $shadow;
+            }
+            .dot-group {
+                text-align: center;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                .carousel__dot {
+                    border: 2px solid $selected;
+                    border-radius: 50%;              
+                    font-size: 1rem;
+                    padding: 10px;
+                    background-color: $background;
+                    margin: .5rem;
+                    opacity: .4;
+                }
+                .carousel__dot--selected {
+                    border-color:2px solid $selected;
+                    background-color: $selected;
+                    color: $selected;
+                    opacity: .8;
+                }
+                
+            }
         }
     }
 
