@@ -37,7 +37,7 @@ body {
     }
     .carousel-comp {
         .gallery-picture {
-            border: 1px solid $text;
+            border: 1px solid $shadow;
         }
         .carousel-container {
             position: relative;
@@ -63,6 +63,7 @@ body {
                 border: none;
                 font-size: 2rem;
                 text-shadow: 2px 2px 8px $shadow;
+                padding: 10px 10px 0 10px;
             }
             .next-button {
                 position: absolute;
@@ -73,6 +74,7 @@ body {
                 border: none;
                 font-size: 2rem;
                 text-shadow: 2px 2px 8px $shadow;
+                padding: 10px 10px 0 10px;
             }
             .dot-group {
                 text-align: center;
@@ -96,6 +98,15 @@ body {
                 
             }
         }
+    }
+    .gallery-page {
+        padding: 4rem .5rem;
+        .gallery-title{
+            font-size: 3.5rem;
+            text-transform: capitalize;
+            text-decoration: underline;
+        }
+        
     }
 
     .footer {
